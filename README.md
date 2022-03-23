@@ -1,38 +1,32 @@
-# pds/skeleton
+# lojavirtual/sdk-pix
 
-This publication describes a standard filesystem skeleton suitable for all PHP
-packages.
+SDK de integração com PIX do Banco Central
 
 ## Summary
 
-A package MUST use these names for these root-level directories:
+Esta sdk gera o qrCode estático para pagamentos sem intemediadores, direto com banco central.
 
-| If a package has a root-level directory for ... | ... then it MUST be named: |
-| ----------------------------------------------- | -------------------------- |
-| documentation files                             | `docs/`                    |
-| PHP source code                                 | `src/`                     |
-| test code                                       | `tests/`                   |
 
-### docs/
+### Como utilizar
 
-If the package provides a root-level directory for documentation files, it MUST
-be named `docs/`.
+```php
+$params = array(
+    "pixKey" => "08402252613",
+    "description" => "Teste Loja Virtual",
+    "merchantName" => "PABLO RAPHAEL ALVES SANCH",
+    "merchantCity" => "BELO HORIZONTE",
+    "txid" => 'Teste',
+    "amount" => 10
+);
 
-This publication does not otherwise define the structure and contents of the
-directory.
+$pix = new Pix($params, 'svg'); // Aceita svg|png
+$result = $pix->generate(400); // Tamanho do qrCode gerado
 
-### src/
+/**
+* Retorna um array com duas chaves: 
+  - payload: Código do pix copia e cola
+  - qrcode: Binário ou Html de SVG do qrCode 
+*/
+```
 
-If the package provides a root-level directory for PHP source code files, it
-MUST be named `src/`.
-
-This publication does not otherwise define the structure and contents of the
-directory.
-
-### tests/
-
-If the package provides a root-level directory for test files, it MUST be named
-`tests/`.
-
-This publication does not otherwise define the structure and contents of the
-directory.
+### enjoy it! ;)
