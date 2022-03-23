@@ -11,7 +11,7 @@ Esta sdk gera o qrCode estático para pagamentos sem intemediadores, direto com 
 
 ```php
 $params = array(
-    "pixKey" => "08402252613",
+    "pixKey" => "teste",
     "description" => "Teste Loja Virtual",
     "merchantName" => "PABLO RAPHAEL ALVES SANCH",
     "merchantCity" => "BELO HORIZONTE",

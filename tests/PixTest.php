@@ -9,7 +9,7 @@ class PixTest extends BaseTesting
     public function testInstanceOf()
     {
         $params = array(
-            "pixKey" => "08402252613",
+            "pixKey" => "teste",
             "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
@@ -23,7 +23,7 @@ class PixTest extends BaseTesting
     public function testBuildClassNameLowerCase()
     {
         $params = array(
-            "pixKey" => "08402252613",
+            "pixKey" => "teste",
             "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
@@ -44,7 +44,7 @@ class PixTest extends BaseTesting
     public function testBuildClassNameUpperCase()
     {
         $params = array(
-            "pixKey" => "08402252613",
+            "pixKey" => "teste",
             "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
@@ -65,7 +65,7 @@ class PixTest extends BaseTesting
     public function testGenerate()
     {
         $params = array(
-            "pixKey" => "08402252613",
+            "pixKey" => "teste",
             "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
