@@ -1,0 +1,18 @@
+version: '3.9'
+
+networks:
+  sdk-pix.network:
+    driver: bridge
+
+services:
+  webserver:
+    build: ./docker
+    container_name: sdk-pix.webserver
+    tty: true
+    volumes:
+      - ./:/app
+    networks:
+      - sdk-pix.network
+    ports:
+      - "80:80"
+      - "443:443"
