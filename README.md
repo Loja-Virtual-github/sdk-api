@@ -10,6 +10,8 @@ Esta sdk gera o qrCode estático para pagamentos sem intemediadores, direto com 
 ### Como utilizar
 
 ```php
+use LojaVirtual\SDKPix\Pix;
+
 $params = array(
     "pixKey" => "teste",
     "description" => "Teste Loja Virtual",
