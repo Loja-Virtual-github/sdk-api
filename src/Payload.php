@@ -8,7 +8,7 @@ use Money\Money;
 
 class Payload
 {
-    const PIX_DOMAIN = 'br.gov.bcb.pix';
+    const PIX_DOMAIN = 'BR.GOV.BCB.PIX';
     const ID_PAYLOAD_FORMAT_INDICATOR = '00';
     const ID_MERCHANT_ACCOUNT_INFORMATION = '26';
     const ID_MERCHANT_ACCOUNT_INFORMATION_GUI = '00';
@@ -179,6 +179,7 @@ class Payload
         $description = !empty($this->getParams('description'))
             ? $this->getValue(self::ID_MERCHANT_ACCOUNT_INFORMATION_DESCRIPTION, $this->getParam('description'))
             : '';
+        $description = '';
 
         return $this->getValue(
             self::ID_MERCHANT_ACCOUNT_INFORMATION,
@@ -240,7 +241,7 @@ class Payload
     {
         $merchantName = $this->getParam('merchantName');
         $merchantName = $this->removeSpecialChars($merchantName);
-        $merchantName = ucfirst($merchantName);
+//        $merchantName = ucfirst($merchantName);
         return $this->getValue(self::ID_MERCHANT_NAME, $merchantName);
     }
 
@@ -253,7 +254,7 @@ class Payload
     {
         $merchantCity = $this->getParam('merchantCity');
         $merchantCity = $this->removeSpecialChars($merchantCity);
-        $merchantCity = mb_strtoupper($merchantCity);
+//        $merchantCity = mb_strtoupper($merchantCity);
         return $this->getValue(self::ID_MERCHANT_CITY, $merchantCity);
     }
 
