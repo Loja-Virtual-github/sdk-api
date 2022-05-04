@@ -421,6 +421,6 @@ class PayloadTest extends BaseTesting
             [$payload->getPayload()]
         );
 
-        $this->assertEquals('6304DA40', $string);
+        $this->assertEquals('63044CC5', $string);
     }
 }
