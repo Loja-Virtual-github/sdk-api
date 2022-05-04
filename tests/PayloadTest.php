@@ -232,7 +232,7 @@ class PayloadTest extends BaseTesting
             []
         );
 
-        $this->assertEquals('26360014br.gov.bcb.pix0105teste0205Teste', $string);
+        $this->assertEquals('26270014BR.GOV.BCB.PIX0105teste', $string);
     }
 
     public function testGetCategoryCode()
@@ -379,7 +379,7 @@ class PayloadTest extends BaseTesting
             []
         );
 
-        $this->assertEquals('6014BELO HORIZONTE', $string);
+        $this->assertEquals('6014Belo Horizonte', $string);
     }
 
     public function testGetAdditionalDataFieldTemplate()
@@ -421,6 +421,6 @@ class PayloadTest extends BaseTesting
             [$payload->getPayload()]
         );
 
-        $this->assertEquals('63046F4C', $string);
+        $this->assertEquals('6304DA40', $string);
     }
 }

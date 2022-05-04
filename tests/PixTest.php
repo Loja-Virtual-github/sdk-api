@@ -10,7 +10,6 @@ class PixTest extends BaseTesting
     {
         $params = array(
             "pixKey" => "teste",
-            "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
             "txid" => 'Teste',
@@ -24,7 +23,6 @@ class PixTest extends BaseTesting
     {
         $params = array(
             "pixKey" => "teste",
-            "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
             "txid" => 'Teste',
@@ -45,7 +43,6 @@ class PixTest extends BaseTesting
     {
         $params = array(
             "pixKey" => "teste",
-            "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
             "txid" => 'Teste',
@@ -66,7 +63,6 @@ class PixTest extends BaseTesting
     {
         $params = array(
             "pixKey" => "teste",
-            "description" => "Teste Loja Virtual",
             "merchantName" => "PABLO RAPHAEL ALVES SANCH",
             "merchantCity" => "BELO HORIZONTE",
             "txid" => 'Teste',
