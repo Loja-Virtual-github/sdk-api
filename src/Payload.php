@@ -219,7 +219,9 @@ class Payload
      */
     private function getAmmount()
     {
-        return $this->getValue(self::ID_TRANSACTION_AMOUNT, $this->getParam('amount'));
+        $amount = $this->getParam('amount');
+        $amount = number_format($amount, 2, '.', '');
+        return $this->getValue(self::ID_TRANSACTION_AMOUNT, $amount);
     }
 
     /**
