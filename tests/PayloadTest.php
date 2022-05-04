@@ -316,7 +316,7 @@ class PayloadTest extends BaseTesting
             []
         );
 
-        $this->assertEquals('540210', $string);
+        $this->assertEquals('540510.00', $string);
     }
 
     public function testGetCountryCode()
